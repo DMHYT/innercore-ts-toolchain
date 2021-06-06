@@ -34,10 +34,10 @@ with(open(getcwd() + "\\out\\" + name + "\\mod.info", 'w')) as mod_info:
     }))
 with(open(getcwd() + "\\out\\" + name + "\\launcher.js", 'w')) as launcher:
     launcher.write(
-        "ConfigureMultiplayer({\n    name: " + name + \
-        ",\n    version: " + version + \
-        ",\n    description: " + description + \
-        ",\n    isClientOnly: " + isClientOnly + \
+        "ConfigureMultiplayer({\n    name: \"" + name + \
+        "\",\n    version: \"" + version + \
+        "\",\n    description: \"" + description + \
+        "\",\n    isClientOnly: " + isClientOnly + \
         "\n});\nLaunch();")
 print("Project was set up successfully!")
 print("Downloading InnerCore TS declarations...")
