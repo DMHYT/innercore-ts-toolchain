@@ -7,7 +7,7 @@ name = input("Enter your mod's name: ")
 author = input("Enter your mod's author's name: ")
 version = input("Enter your mod's version (any text): ")
 description = input("Enter your mod's short description: ")
-isClientOnly = "true" if input("Will your mod be only client? (+ / -): ") else "false"
+isClientOnly = "true" if input("Will your mod be only client? (+ / -): ") == "+" else "false"
 print("Downloading template mod archive from GitHub...")
 urlretrieve("https://raw.githubusercontent.com/DMHYT/innercore-ts-toolchain/main/mod-archive.zip", getcwd() + "\\mod-archive.zip")
 print("Extracting archive...")
